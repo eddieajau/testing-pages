@@ -1,8 +1,8 @@
 ---
-title: This will be used as the title-tag of the page head
+layout: default
+navigation:
+  - name: Hello
+    link: "#hello"
 ---
-
-# Title
-
-* Bullet lists are also easy to create
-* One more
+# Hello
+Hello World!

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.project.name }} - {{ site.project.tagline }}</title>
+		<link type="text/css" rel="stylesheet" media="all" href="http://zynga.github.com/gh-pages-template/style.css">
+		<link rel="shortcut icon" href="http://zynga.github.com/gh-pages-template/favicon.ico" type="image/x-icon" />
+		<meta name="robots" content="index,follow" />
+	</head>
+	<body>
+		{% if site.project.github %}<a href="{{ site.project.github }}"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 998; " src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>{% endif %}
+		<div id="container">
+			<div id="header">
+				<a href="#top" id="logo"><img src="http://zynga.github.com/gh-pages-template/logo.png" /></a>
+				<h1 id="slogan">{{ site.project.name }}</h1>
+				<span id="tagline">{{ site.project.tagline }}</span>
+
+				<ul id="pagenav">
+					{% if page.navigation %}
+						{% for nav in page.navigation %}
+							<li><a href="{{ nav.link }}">{{ nav.name }}</a></li>
+						{% endfor %}
+					{% endif %}
+					{% if site.project.navigation %}
+						{% for nav in site.project.navigation %}
+							<li><a href="{{ nav.link }}">{{ nav.name }}</a></li>
+						{% endfor %}
+					{% endif %}
+				</ul>
+
+			</div>
+			<div id="content">
+				<a name="top"></a>
+				{{ page.test }}
+				{{ content }}
+			</div>
+		</div>
+	</body>
+</html>

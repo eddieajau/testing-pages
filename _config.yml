@@ -1,0 +1,6 @@
+safe: true
+
+project:
+    name: Testing Pages
+    tagline: This is the testing pages tagline
+    github: https://github.com/eddieajau/testing-pages
