@@ -4,4 +4,4 @@ layout: default
 ---
 # Hello
 
-[Chapter 1](chapters/c1.markdown)
+[Chapter 1](chapters/)
