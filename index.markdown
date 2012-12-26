@@ -6,4 +6,4 @@ navigation:
 ---
 # Hello
 
-[Chapter 1](_chapters/c1.md)
+[Chapter 1](chapters/c1.md)
